@@ -1,3 +1,10 @@
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "./ui/carousel";
 import { Card } from "./ui/card";
 
 export const Technologies = () => {
@@ -11,32 +18,37 @@ export const Technologies = () => {
   return (
     <section id="technologies" className="section-padding">
       <div className="max-w-7xl mx-auto">
-        <h2 className="heading text-4xl md:text-5xl text-center mb-16">
-          Tecnologias
-        </h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* Left side - Image */}
-          <div className="flex items-center justify-center">
-            <Card className="w-full h-full overflow-hidden glass-card">
-              <img
-                src="photo-1488590528505-98d2b5aba04b"
-                alt="Technology Illustration"
-                className="w-full h-full object-cover aspect-square"
-              />
-            </Card>
-          </div>
-          
-          {/* Right side - Technologies Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-            {techs.map((tech, index) => (
-              <div
-                key={index}
-                className="glass-card p-3 text-center hover:scale-105 transition-transform duration-300 flex items-center justify-center"
-              >
-                <span className="text-sm font-semibold">{tech}</span>
-              </div>
-            ))}
-          </div>
+        <div className="text-center mb-16">
+          <h2 className="heading text-4xl md:text-5xl mb-4">
+            Tecnologias
+          </h2>
+          <p className="text-lg text-base-content/80 max-w-2xl mx-auto">
+            Utilizamos as melhores e mais modernas tecnologias para desenvolver soluções inovadoras e eficientes
+          </p>
+        </div>
+
+        <div className="px-12">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {techs.map((tech, index) => (
+                <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
+                  <div className="p-1">
+                    <Card className="glass-card p-6 text-center hover:scale-105 transition-transform duration-300 flex items-center justify-center min-h-[120px]">
+                      <span className="text-base font-semibold">{tech}</span>
+                    </Card>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </div>
       </div>
     </section>
