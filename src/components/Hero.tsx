@@ -10,7 +10,7 @@ export const Hero = () => {
           alt="Background"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-base-100/90 to-base-100/80 backdrop-blur-[2px]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-base-100/60 to-base-100/50 backdrop-blur-[1px]" />
         {/* Noise overlay */}
         <div 
           className="absolute inset-0 opacity-[0.015]"
