@@ -41,17 +41,16 @@ export default {
   plugins: [require("daisyui")],
   daisyui: {
     themes: [
-      "bumblebee",
       {
         dark: {
           ...require("daisyui/src/theming/themes")["dark"],
-          "primary": "#fbbf24", // Amber-400 for yellow
-          "primary-focus": "#f59e0b", // Amber-500
-          "primary-content": "#1e293b", // Slate-800
-          "base-100": "#0f172a", // Slate-900 for dark blue background
-          "base-200": "#1e293b", // Slate-800
-          "base-300": "#334155", // Slate-700
-          "base-content": "#f8fafc", // Slate-50 for text
+          "primary": "#D946EF", // Magenta Pink
+          "primary-focus": "#C026D3",
+          "primary-content": "#1e293b",
+          "base-100": "#0f172a",
+          "base-200": "#1e293b",
+          "base-300": "#334155",
+          "base-content": "#f8fafc",
         },
       },
     ],

@@ -10,8 +10,7 @@ const queryClient = new QueryClient();
 
 const App = () => {
   useEffect(() => {
-    const theme = localStorage.getItem('theme') || 'light';
-    document.documentElement.setAttribute('data-theme', theme === 'dark' ? 'dark' : 'bumblebee');
+    document.documentElement.setAttribute('data-theme', 'dark');
   }, []);
 
   return (
