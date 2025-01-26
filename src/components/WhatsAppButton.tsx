@@ -1,5 +1,5 @@
 export const WhatsAppButton = () => {
-  const phoneNumber = "5511999999999"; // Substitua pelo número real
+  const phoneNumber = "5511945207618";
   const message = "Olá! Gostaria de saber mais sobre os serviços da BiApps.";
   
   const handleClick = () => {
