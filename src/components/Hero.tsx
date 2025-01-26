@@ -6,7 +6,7 @@ export const Hero = () => {
       {/* Background Image + Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/lovable-uploads/1561d0b2-5f01-4486-aa75-5b0289461159.png"
+          src="/lovable-uploads/cc62fcbe-e999-4e33-9289-2b7924d426b7.png"
           alt="Background"
           className="w-full h-full object-cover"
         />
