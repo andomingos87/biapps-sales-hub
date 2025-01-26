@@ -1,4 +1,4 @@
-import { Brain, Robot, Chart, Code } from "lucide-react";
+import { Brain, Bot, BarChart, Code } from "lucide-react";
 
 const services = [
   {
@@ -7,12 +7,12 @@ const services = [
     description: "Modelos personalizados para otimizar seus processos"
   },
   {
-    icon: <Robot size={40} />,
+    icon: <Bot size={40} />,
     title: "Automação",
     description: "Automatize tarefas repetitivas e aumente a produtividade"
   },
   {
-    icon: <Chart size={40} />,
+    icon: <BarChart size={40} />,
     title: "Análise de Dados",
     description: "Insights valiosos para decisões estratégicas"
   },
