@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
-import { Calendar } from "lucide-react";
+import { Calendar, Moon, Sun } from "lucide-react";
+import { useTheme } from "@/hooks/use-theme";
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,9 +25,18 @@ export const Header = () => {
           <a href="#technologies" className="hover:text-primary transition-colors">Tecnologias</a>
           <a href="#clients" className="hover:text-primary transition-colors">Clientes</a>
         </nav>
-        <button className="btn btn-primary gap-2">
-          Agendar Call <Calendar size={18} />
-        </button>
+        <div className="flex items-center gap-4">
+          <button
+            onClick={toggleTheme}
+            className="btn btn-ghost btn-circle"
+            aria-label="Toggle theme"
+          >
+            {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
+          </button>
+          <button className="btn btn-primary gap-2">
+            Agendar Call <Calendar size={18} />
+          </button>
+        </div>
       </div>
     </header>
   );

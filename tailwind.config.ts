@@ -40,7 +40,7 @@ export default {
   },
   plugins: [require("daisyui")],
   daisyui: {
-    themes: ["bumblebee"],
-    darkTheme: "bumblebee",
+    themes: ["bumblebee", "dark"],
+    darkTheme: "dark",
   },
 } satisfies Config;
