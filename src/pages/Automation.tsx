@@ -16,7 +16,7 @@ const Automation = () => {
       <section className="pt-32 pb-16 bg-gradient-to-b from-base-200 to-base-100">
         <div className="container mx-auto px-4">
           <button 
-            onClick={() => navigate(-1)}
+            onClick={() => navigate('/')}
             className="mb-8 text-primary hover:text-primary/80"
           >
             ← Voltar
@@ -32,7 +32,11 @@ const Automation = () => {
                 Automatize processos repetitivos e libere sua equipe para focar 
                 em atividades estratégicas que agregam mais valor ao negócio.
               </p>
-              <Button size="lg" className="gap-2">
+              <Button 
+                size="lg" 
+                className="gap-2"
+                onClick={() => window.location.href = 'mailto:contato@biapps.com.br'}
+              >
                 Falar com especialista <ArrowRight size={20} />
               </Button>
             </div>
