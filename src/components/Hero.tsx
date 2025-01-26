@@ -23,16 +23,16 @@ export const Hero = () => {
       {/* Content */}
       <div className="max-w-7xl mx-auto text-center relative z-10">
         <h1 className="heading text-5xl md:text-7xl mb-6 bg-gradient-to-r from-primary to-base-content bg-clip-text text-transparent animate-float">
-          Transforme seu Negócio com IA
+          Transforme seu Negócio com Inteligência Artificial
         </h1>
         <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
           Soluções personalizadas de Inteligência Artificial para impulsionar sua empresa ao próximo nível
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="btn btn-primary btn-lg gap-2">
-            Agende uma Consulta <ArrowRight size={20} />
+          <button className="btn btn-primary btn-lg gap-2 shadow-[0_0_15px_rgba(217,70,239,0.5)]">
+            Falar com especialista <ArrowRight size={20} />
           </button>
-          <button className="btn btn-outline btn-lg">Conheça Nossos Cases</button>
+          <button className="btn btn-outline btn-lg shadow-[0_0_15px_rgba(226,232,240,0.3)]">Conheça Nossos Cases</button>
         </div>
       </div>
     </div>

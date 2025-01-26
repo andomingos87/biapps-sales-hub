@@ -10,8 +10,8 @@ export const CallToAction = () => {
         <p className="text-xl mb-8">
           Agende uma consulta gratuita e descubra como a IA pode revolucionar sua empresa
         </p>
-        <button className="btn btn-primary btn-lg gap-2">
-          Agendar Consultoria <Calendar size={20} />
+        <button className="btn btn-primary btn-lg gap-2 shadow-[0_0_15px_rgba(217,70,239,0.5)]">
+          Falar com especialista <Calendar size={20} />
         </button>
       </div>
     </section>
