@@ -1,5 +1,3 @@
-import { MessageCircle } from "lucide-react";
-
 export const WhatsAppButton = () => {
   const phoneNumber = "5511999999999"; // Substitua pelo número real
   const message = "Olá! Gostaria de saber mais sobre os serviços da BiApps.";
@@ -12,10 +10,26 @@ export const WhatsAppButton = () => {
   return (
     <button
       onClick={handleClick}
-      className="fixed bottom-6 right-6 btn btn-primary btn-circle btn-lg animate-float shadow-lg"
+      className="fixed bottom-6 right-6 p-3 rounded-full bg-[#25D366] hover:bg-[#22c15e] transition-colors shadow-lg animate-float"
       aria-label="Contato via WhatsApp"
     >
-      <MessageCircle size={24} />
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 32 32"
+        width="32"
+        height="32"
+        fill="none"
+        className="w-8 h-8"
+      >
+        <path
+          fill="#25D366"
+          d="M16 1.333C7.636 1.333 1.333 7.636 1.333 16c0 3.095 0.85 6.095 2.457 8.689l-1.646 6.058 6.162-1.618A14.642 14.642 0 0016 30.667C24.364 30.667 30.667 24.364 30.667 16S24.364 1.333 16 1.333zm0 26.667c-2.627 0-5.192-.753-7.404-2.157l-.532-.332-3.65.96.976-3.591-.34-.557a12.01 12.01 0 01-1.922-6.583c0-6.617 5.383-12 12-12s12 5.383 12 12-5.383 12-12 12z"
+        />
+        <path
+          fill="#FFF"
+          d="M22.454 18.935c-.333-.166-1.965-.964-2.27-1.075-.303-.111-.523-.166-.743.166-.221.333-.854 1.075-1.048 1.295-.194.222-.36.25-.693.083-.333-.166-1.404-.518-2.674-1.649-.987-.877-1.653-1.957-1.847-2.29-.194-.333-.021-.513.145-.68.148-.148.333-.387.499-.58.166-.194.222-.333.333-.555.111-.222.056-.416-.027-.583-.084-.167-.743-1.795-1.02-2.462-.27-.648-.544-.555-.743-.555-.194 0-.417-.028-.643-.028-.222 0-.581.084-.885.417-.305.334-1.16 1.133-1.16 2.763 0 1.63 1.185 3.204 1.35 3.426.166.222 2.333 3.548 5.656 4.966.791.334 1.409.533 1.886.68.791.25 1.51.215 2.08.13.634-.093 1.965-.803 2.243-1.578.278-.777.278-1.445.194-1.578-.083-.134-.305-.222-.639-.389z"
+        />
+      </svg>
     </button>
   );
 };
