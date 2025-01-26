@@ -12,8 +12,8 @@ export const Technologies = () => {
   ];
 
   return (
-    <section id="technologies" className="section-padding">
-      <div className="max-w-full mx-auto">
+    <section id="technologies" className="w-full">
+      <div className="w-full">
         <div className="text-center mb-16">
           <h2 className="heading text-4xl md:text-5xl mb-4">
             Tecnologias
