@@ -1,6 +1,9 @@
 import { ArrowRight } from "lucide-react";
+import { useTheme } from "@/hooks/use-theme";
 
 export const Hero = () => {
+  const { theme } = useTheme();
+
   return (
     <div className="min-h-screen flex items-center justify-center section-padding relative">
       {/* Background Image + Overlay */}
@@ -10,7 +13,9 @@ export const Hero = () => {
           alt="Background"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-base-100/90 to-base-100/80 backdrop-blur-[2px]" />
+        {theme === 'dark' && (
+          <div className="absolute inset-0 bg-gradient-to-b from-base-100/90 to-base-100/80 backdrop-blur-[2px]" />
+        )}
         {/* Noise overlay */}
         <div 
           className="absolute inset-0 opacity-[0.015]"
