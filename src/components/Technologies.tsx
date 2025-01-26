@@ -12,7 +12,7 @@ export const Technologies = () => {
   ];
 
   return (
-    <section id="technologies" className="w-full">
+    <section id="technologies" className="w-full section-padding">
       <div className="w-full">
         <div className="text-center mb-16">
           <h2 className="heading text-4xl md:text-5xl mb-4">
